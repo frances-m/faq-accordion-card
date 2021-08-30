@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.attribution, .card ul {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.card h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#af67e9, #6565e7);
+}
+
+.card-container {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 39px;
+}
+
+#illustration-box {
+  display: none;
+}
+
+#illustration-main-desktop {
+  display: none;
+}
+
+#illustration-bg-desktop {
+  display: none;
+}
+
+.illustration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.illustration-container #illustration-main-mobile {
+  position: relative;
+  z-index: 2;
+}
+.illustration-container #illustration-bg-mobile {
+  position: relative;
+  z-index: 1;
+  top: -70px;
+}
+
+.card {
+  position: relative;
+  top: -178px;
+  padding-top: 100px;
+  background-color: white;
+  width: inherit;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px -20px #1d1e35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card h1 {
+  font-size: 30px;
+  margin-top: 31px;
+  margin-bottom: 16px;
+}
+.card ul {
+  list-style-type: none;
+  width: 85%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+}
+.card ul li {
+  border-bottom: 1px solid #e7e7e9;
+  padding-bottom: 5px;
+  margin-top: 16px;
+}
+.card ul li h2 {
+  font-size: 14px;
+  font-weight: inherit;
+  color: #787887;
+  display: flex;
+  justify-content: space-between;
+}
+.card ul li h2::after {
+  content: url(./images/icon-arrow-down.svg);
+  display: inline-block;
+}
+.card ul li h2:hover {
+  color: #f47c57;
+}
+.card ul li p {
+  font-size: 12px;
+  color: #787887;
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.active {
+  font-weight: 700 !important;
+  color: #4a4b5e !important;
+}
+.active::after {
+  transform: rotate(180deg);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: -150px;
+}
+.attribution a {
+  font-weight: 700;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 360px) {
+  ul {
+    width: 90% !important;
+  }
+  ul li h2 {
+    font-size: 13px !important;
+  }
+
+  .attribution {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .card-container {
+    width: 331.35px;
+  }
+}
+@media screen and (min-height: 826px) and (max-width: 1000px) {
+  body {
+    position: relative;
+    top: -39px;
+    height: 120vh;
+    margin-top: 15vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 970px;
+    height: 535px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  #illustration-box {
+    display: hide;
+  }
+
+  .illustration-container {
+    height: inherit;
+    width: 800px;
+    overflow: hidden;
+  }
+  .illustration-container #illustration-main-desktop {
+    display: block;
+    position: relative;
+    left: -70px;
+    top: 74px;
+    z-index: 2;
+  }
+  .illustration-container #illustration-bg-desktop {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    bottom: 649px;
+    left: -316px;
+  }
+  .illustration-container #illustration-main-mobile {
+    display: none;
+  }
+  .illustration-container #illustration-bg-mobile {
+    display: none;
+  }
+
+  .card {
+    position: static;
+    padding-top: 0;
+    background-color: none;
+    box-shadow: none;
+    align-items: flex-start;
+    height: inherit;
+  }
+  .card h1 {
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding-left: 60px;
+  }
+  .card ul {
+    width: 65%;
+    padding-left: 60px;
+  }
+
+  .attribution {
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
