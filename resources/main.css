@@ -74,6 +74,7 @@ body {
 }
 .card #faq-questions {
   width: 85%;
+  min-width: 254px;
   margin: 0;
   padding: 0;
   padding-bottom: 45px;

@@ -71,6 +71,7 @@ body {
 
   #faq-questions {
     width: 85%;
+    min-width: 254px;
     @extend %Kumbh-400;
     margin: 0;
     padding: 0;
