@@ -11,6 +11,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Acknowledgements](#acknowledgements)
 
 
 
@@ -45,4 +46,8 @@ Users should be able to:
 
 ### What I learned
 
-This was a great challenge to practice with the CSS `position` property and had me coming up with new ideas. This was also my first time using jQuery in a project and it really reinforced how useful it can be. 
+This was a great challenge to practice with the CSS `position` property and had me coming up with new ideas. This was also my first time using jQuery in a project and it really reinforced how useful it can be.
+
+### Acknowledgements
+
+A huge thank you to @pikapikamart for all of their insightful comments on this project. Because of them, this project has been updated to use `<details>` and `<summary>` tags to increase the accessibility of the site along with a lot of other fixes. 

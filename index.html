@@ -4,53 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./resources/main.css" />
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
 </head>
 <body>
   <main>
-    <img id="illustration-box" src="./resources/images/illustration-box-desktop.svg" alt="box for main illustration" />
+    <img id="illustration-box" src="./resources/images/illustration-box-desktop.svg" alt="" />
     <div class="card-container">
       <div class="illustration-container" />
-        <img id="illustration-main-mobile" src="./resources/images/illustration-woman-online-mobile.svg" alt="illustration of woman online" />
-        <img id="illustration-bg-mobile" src="./resources/images/bg-pattern-mobile.svg" alt="background for main illustration" />
-        <img id="illustration-main-desktop" src="./resources/images/illustration-woman-online-desktop.svg" alt="illustration of woman online" />
-        <img id="illustration-bg-desktop" src="./resources/images/bg-pattern-desktop.svg" alt="background for main illustration" />
+        <img id="illustration-main-mobile" src="./resources/images/illustration-woman-online-mobile.svg" alt="" />
+        <img id="illustration-bg-mobile" src="./resources/images/bg-pattern-mobile.svg" alt="" />
+        <img id="illustration-main-desktop" src="./resources/images/illustration-woman-online-desktop.svg" alt="" />
+        <img id="illustration-bg-desktop" src="./resources/images/bg-pattern-desktop.svg" alt="" />
       </div>
       <article class="card">
         <h1>FAQ</h1>
-        <ul>
+        <div id="faq-questions">
 
-          <li>
-            <h2 class="question">How many team members can I invite?</h2>
-            <p>You can invite up to 2 additional users on the Free plan. There is no limit on
-            team members for the Premium plan.</p>
-          </li>
+          <details>
+            <summary class="question">How many team members can I invite?</summary>
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </details>
 
-          <li>
-            <h2 class="question">What is the maximum file upload size?</h2>
-            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-          </li>
+          <details>
+            <summary class="question">What is the maximum file upload size?</summary>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </details>
 
-          <li>
-            <h2 class="question">How do I reset my password?</h2>
-            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.</p>
-          </li>
+          <details>
+            <summary class="question">How do I reset my password?</summary>
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </details>
 
-          <li>
-            <h2 class="question">Can I cancel my subscription?</h2>
-            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-          </li>
+          <details>
+            <summary class="question">Can I cancel my subscription?</summary>
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </details>
 
-          <li>
-            <h2 class="question">Do you provide additional support?</h2>
-            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-          </li>
+          <details>
+            <summary class="question">Do you provide additional support?</summary>
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </details>
 
-        </ul>
+        </div>
       </article>
     </div>
 

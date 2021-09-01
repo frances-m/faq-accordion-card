@@ -6,6 +6,9 @@ body {
   padding: 0;
   margin: 0;
   background-image: linear-gradient($soft-violet, $soft-blue);
+  position: relative;
+  top: 0px;
+  min-height: 100vh;
 }
 
 .card-container {
@@ -66,25 +69,25 @@ body {
     color: $dark-blue;
   }
 
-  ul {
-    list-style-type: none;
+  #faq-questions {
     width: 85%;
     @extend %Kumbh-400;
     margin: 0;
     padding: 0;
     padding-bottom: 45px;
 
-    li {
+    details {
       border-bottom: 1px solid $light-gray-blue;
       padding-bottom: 5px;
       margin-top: 16px;
 
-      h2 {
+      summary {
         font-size: 14px;
         font-weight: inherit;
         color: $gray-blue;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
 
         &::after {
           content: url(./images/icon-arrow-down.svg);
@@ -96,12 +99,10 @@ body {
         }
       }
 
-      p {
+      &[open] {
         font-size: 12px;
         color: $gray-blue;
-        display: none;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
       }
     }
   }
@@ -133,12 +134,12 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 360px) {
-  ul {
+  #faq-questions {
     width: 90% !important;
 
-    li {
+    details {
 
-      h2 {
+      summary {
         font-size: 13px !important;
       }
     }
@@ -155,18 +156,9 @@ body {
   }
 }
 
-@media screen and (min-height: 826px) and (max-width: 1000px) {
+@media screen and (min-width: 1020px) {
   body {
-    position: relative;
-    top: -39px;
-    height: 120vh;
-    margin-top: 15vh;
-  }
-}
-
-@media screen and (min-width: 1080px) and (min-height: 600px) {
-  body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,6 +178,15 @@ body {
     position: absolute;
     top: 246px;
     z-index: 3;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes float {
+    50%  {transform: translateY(-6px);}
+    100% {transform: translateY(0px);}
   }
 
   .card-container {
@@ -249,7 +250,7 @@ body {
       font-size: 32px;
     }
 
-    ul {
+    #faq-questions {
       width: 68%;
       padding-left: 48px;
     }
@@ -257,5 +258,12 @@ body {
 
   .attribution {
     position: static;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  #illustration-box {
+    animation-duration: 0.0001s;
+    animation-iteration-count: 1;
   }
 }

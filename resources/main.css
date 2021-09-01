@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-.attribution, .card ul {
+.attribution, .card #faq-questions {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
 }
@@ -13,6 +13,9 @@ body {
   padding: 0;
   margin: 0;
   background-image: linear-gradient(#af67e9, #6565e7);
+  position: relative;
+  top: 0px;
+  min-height: 100vh;
 }
 
 .card-container {
@@ -69,38 +72,36 @@ body {
   margin-bottom: 16px;
   color: #1d1e35;
 }
-.card ul {
-  list-style-type: none;
+.card #faq-questions {
   width: 85%;
   margin: 0;
   padding: 0;
   padding-bottom: 45px;
 }
-.card ul li {
+.card #faq-questions details {
   border-bottom: 1px solid #e7e7e9;
   padding-bottom: 5px;
   margin-top: 16px;
 }
-.card ul li h2 {
+.card #faq-questions details summary {
   font-size: 14px;
   font-weight: inherit;
   color: #787887;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
-.card ul li h2::after {
+.card #faq-questions details summary::after {
   content: url(./images/icon-arrow-down.svg);
   display: inline-block;
 }
-.card ul li h2:hover {
+.card #faq-questions details summary:hover {
   color: #f47c57;
 }
-.card ul li p {
+.card #faq-questions details[open] {
   font-size: 12px;
   color: #787887;
-  display: none;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .active {
@@ -125,10 +126,10 @@ body {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 360px) {
-  ul {
+  #faq-questions {
     width: 90% !important;
   }
-  ul li h2 {
+  #faq-questions details summary {
     font-size: 13px !important;
   }
 
@@ -141,17 +142,9 @@ body {
     width: 331.35px;
   }
 }
-@media screen and (min-height: 826px) and (max-width: 1000px) {
+@media screen and (min-width: 1020px) {
   body {
-    position: relative;
-    top: -39px;
-    height: 120vh;
-    margin-top: 15vh;
-  }
-}
-@media screen and (min-width: 1080px) and (min-height: 600px) {
-  body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,8 +164,20 @@ body {
     position: absolute;
     top: 246px;
     z-index: 3;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
 
+  @keyframes float {
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
   .card-container {
     flex-direction: row;
     justify-content: flex-start;
@@ -227,13 +232,19 @@ body {
     padding-left: 48px;
     font-size: 32px;
   }
-  .card ul {
+  .card #faq-questions {
     width: 68%;
     padding-left: 48px;
   }
 
   .attribution {
     position: static;
+  }
+}
+@media (prefers-reduced-motion) {
+  #illustration-box {
+    animation-duration: 0.0001s;
+    animation-iteration-count: 1;
   }
 }
 
