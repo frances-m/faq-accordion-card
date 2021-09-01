@@ -90,6 +90,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  list-style: none;
 }
 .card #faq-questions details summary::after {
   content: url(./images/icon-arrow-down.svg);

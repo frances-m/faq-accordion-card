@@ -88,6 +88,7 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+        list-style: none;
 
         &::after {
           content: url(./images/icon-arrow-down.svg);
