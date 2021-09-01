@@ -92,6 +92,9 @@ body {
   margin-bottom: 10px;
   list-style: none;
 }
+.card #faq-questions details summary::-webkit-details-marker {
+  display: none;
+}
 .card #faq-questions details summary::after {
   content: url(./images/icon-arrow-down.svg);
   display: inline-block;

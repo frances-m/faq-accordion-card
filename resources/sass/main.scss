@@ -90,6 +90,10 @@ body {
         margin-bottom: 10px;
         list-style: none;
 
+        &::-webkit-details-marker {
+          display: none;
+        }
+
         &::after {
           content: url(./images/icon-arrow-down.svg);
           display: inline-block;
