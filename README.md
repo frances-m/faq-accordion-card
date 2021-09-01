@@ -50,4 +50,4 @@ This was a great challenge to practice with the CSS `position` property and had 
 
 ### Acknowledgements
 
-A huge thank you to @pikapikamart for all of their insightful comments on this project. Because of them, this project has been updated to use `<details>` and `<summary>` tags to increase the accessibility of the site along with a lot of other fixes. 
+A huge thank you to [@pikapikamart](https://github.com/pikapikamart) for all of their insightful comments on this project. Because of them, this project has been updated to use `<details>` and `<summary>` tags to increase the accessibility of the site along with a lot of other fixes. 
