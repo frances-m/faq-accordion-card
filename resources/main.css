@@ -222,6 +222,8 @@ body {
     box-shadow: none;
     align-items: flex-start;
     height: inherit;
+    width: inherit;
+    max-width: none;
   }
   .card h1 {
     width: 65%;
