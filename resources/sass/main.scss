@@ -89,6 +89,7 @@ body {
         justify-content: space-between;
         margin-bottom: 10px;
         list-style: none;
+        cursor: pointer;
 
         &::-webkit-details-marker {
           display: none;
@@ -102,6 +103,11 @@ body {
         &:hover {
           color: $soft-red;
         }
+
+        & > * {
+          display: inline;
+        }
+
       }
 
       &[open] {

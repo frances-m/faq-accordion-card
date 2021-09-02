@@ -90,6 +90,7 @@ body {
   justify-content: space-between;
   margin-bottom: 10px;
   list-style: none;
+  cursor: pointer;
 }
 .card #faq-questions details summary::-webkit-details-marker {
   display: none;
@@ -100,6 +101,9 @@ body {
 }
 .card #faq-questions details summary:hover {
   color: #f47c57;
+}
+.card #faq-questions details summary > * {
+  display: inline;
 }
 .card #faq-questions details[open] {
   font-size: 12px;
