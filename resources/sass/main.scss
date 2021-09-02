@@ -96,7 +96,7 @@ body {
 
         &::after {
           content: url(./images/icon-arrow-down.svg);
-          display: inline-block;
+          display: block;
         }
 
         &:hover {

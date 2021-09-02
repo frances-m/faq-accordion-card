@@ -96,7 +96,7 @@ body {
 }
 .card #faq-questions details summary::after {
   content: url(./images/icon-arrow-down.svg);
-  display: inline-block;
+  display: block;
 }
 .card #faq-questions details summary:hover {
   color: #f47c57;
