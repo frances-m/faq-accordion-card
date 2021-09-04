@@ -108,6 +108,10 @@ body {
           color: $soft-red;
         }
 
+        &:focus {
+          outline: none;
+        }
+
         &:focus-visible {
           outline: 2px solid hsl(273, 75%, 66%);
           outline-offset: 4px;
