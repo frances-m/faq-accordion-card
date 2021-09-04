@@ -72,7 +72,7 @@ body {
   color: #1d1e35;
 }
 .card #faq-questions {
-  width: 85%;
+  width: 87%;
   margin: 0;
   padding: 0;
   padding-bottom: 45px;
@@ -91,6 +91,7 @@ body {
   margin-bottom: 10px;
   list-style: none;
   cursor: pointer;
+  padding: 0 3px;
 }
 .card #faq-questions details summary::-webkit-details-marker {
   display: none;
