@@ -98,7 +98,9 @@ body {
 
         &::after {
           content: url(./images/icon-arrow-down.svg);
-          display: block;
+          display: inline-block;
+          position: absolute;
+          right: 25px;
 
         }
 
@@ -106,8 +108,10 @@ body {
           color: $soft-red;
         }
 
-        &:focus {
-          outline: none;
+        &:focus-visible {
+          outline: 2px solid hsl(273, 75%, 66%);
+          outline-offset: 4px;
+          border-radius: 7px;
         }
 
         & > * {
@@ -158,6 +162,7 @@ body {
 
       summary {
         font-size: 13px !important;
+
       }
     }
   }
@@ -268,8 +273,9 @@ body {
       width: 68%;
       padding-left: 48px;
 
-      details > summary:focus {
-        outline: 1px dotted blue;
+      details > summary::after {
+          display: block;
+          position: static;
       }
     }
   }

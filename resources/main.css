@@ -98,13 +98,17 @@ body {
 }
 .card #faq-questions details summary::after {
   content: url(./images/icon-arrow-down.svg);
-  display: block;
+  display: inline-block;
+  position: absolute;
+  right: 25px;
 }
 .card #faq-questions details summary:hover {
   color: #f47c57;
 }
-.card #faq-questions details summary:focus {
-  outline: none;
+.card #faq-questions details summary:focus-visible {
+  outline: 2px solid #af67e9;
+  outline-offset: 4px;
+  border-radius: 7px;
 }
 .card #faq-questions details summary > * {
   display: inline;
@@ -244,8 +248,9 @@ body {
     width: 68%;
     padding-left: 48px;
   }
-  .card #faq-questions details > summary:focus {
-    outline: 1px dotted blue;
+  .card #faq-questions details > summary::after {
+    display: block;
+    position: static;
   }
 
   .attribution {
