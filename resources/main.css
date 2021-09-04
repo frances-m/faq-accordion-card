@@ -102,6 +102,9 @@ body {
 .card #faq-questions details summary:hover {
   color: #f47c57;
 }
+.card #faq-questions details summary:focus {
+  outline: none;
+}
 .card #faq-questions details summary > * {
   display: inline;
 }
@@ -239,6 +242,9 @@ body {
   .card #faq-questions {
     width: 68%;
     padding-left: 48px;
+  }
+  .card #faq-questions details > summary:focus {
+    outline: 1px dotted blue;
   }
 
   .attribution {

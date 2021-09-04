@@ -104,6 +104,10 @@ body {
           color: $soft-red;
         }
 
+        &:focus {
+          outline: none;
+        }
+
         & > * {
           display: inline;
         }
@@ -261,6 +265,10 @@ body {
     #faq-questions {
       width: 68%;
       padding-left: 48px;
+
+      details > summary:focus {
+        outline: 1px dotted blue;
+      }
     }
   }
 
